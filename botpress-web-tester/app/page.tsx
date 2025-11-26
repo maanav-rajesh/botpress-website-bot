@@ -13,31 +13,22 @@ import "./webchat-styles.css";
 
 const headerConfig = {
   botName: "Botpress",
-  botAvatar: "https://cdn.botpress.cloud/bot-avatar.png",
-
-  phone: {
-    title: "Call Support",
-    link: "tel:+1234567890",
-  },
-
-  email: {
-    title: "Email Us",
-    link: "mailto:support@example.com",
-  },
+  botAvatar:
+    "https://yt3.googleusercontent.com/dK-1H-YWYuaRa7uq-dbPnICGzKnn20mGOFs9-2YjB0ugI-zSpRzqa7L4yI6QL3awboH3Ggs0cQ=s900-c-k-c0x00ffffff-no-rj",
 
   website: {
-    title: "Visit our website",
-    link: "https://www.example.com",
+    title: "Talk to Sales",
+    link: "https://botpress.com/contact-us?ref=web-bot",
   },
 
   termsOfService: {
     title: "Terms of Service",
-    link: "https://www.example.com/terms",
+    link: "https://botpress.com/legal/terms-of-service",
   },
 
   privacyPolicy: {
-    title: "Privacy Policy",
-    link: "https://www.example.com/privacy",
+    title: "Privacy Statement",
+    link: "https://botpress.com/legal/privacy-statement",
   },
 };
 
@@ -49,9 +40,9 @@ export default function Home() {
     });
 
   const config = {
-    botName: "SupportBot",
-    botAvatar: "https://picsum.photos/id/80/400",
-    botDescription: "Your virtual assistant for all things support.",
+    botName: "Welcome to Botpress",
+    botAvatar: headerConfig.botAvatar,
+    botDescription: "How can we help you today?",
   };
   const enrichedMessages = useMemo(
     () =>
@@ -100,7 +91,6 @@ export default function Home() {
           botName={config.botName}
           botDescription={config.botDescription}
           isTyping={isTyping}
-          headerMessage="Chat History"
           showMarquee={true}
           messages={enrichedMessages}
           sendMessage={client?.sendMessage}

@@ -37,6 +37,9 @@
 .bpHeaderContentTitle,
 .bpHeaderContentDescription {
   color: black;
+  font-size: x-large;
+  padding-top: 2;
+  padding-bottom: 2;
 }
 
 /* Header avatar - black circle with white text */
