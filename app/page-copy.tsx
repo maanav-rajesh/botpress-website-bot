@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import {
   Container,
@@ -7,7 +7,6 @@ import {
   Composer,
   useWebchat,
   Fab,
-  Webchat,
 } from "@botpress/webchat";
 import { useState, useMemo } from "react";
 import "./webchat-styles.css";
@@ -75,9 +74,6 @@ export default function Home() {
 
   return (
     <>
-      <Webchat clientId="2f5a29ff-c8c2-43c2-94cb-afa173526f7a" />
-
-      {/*     
       <Container
         connected={clientState !== "disconnected"}
         style={{ display: isWebchatOpen ? "flex" : "none" }}
@@ -109,8 +105,10 @@ export default function Home() {
           uploadFile={client?.uploadFile}
           composerPlaceholder="Type a message..."
         />
-      </Container> */}
-      <Fab onClick={() => toggleWebchat()} />
+      </Container>
+      <Fab
+        onClick={() => toggleWebchat()}
+      />
     </>
   );
 }
