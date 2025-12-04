@@ -46,24 +46,17 @@ export default function Home() {
     () =>
       messages.map((message) => {
         const { authorId } = message;
-        const direction = authorId === user?.userId ? "outgoing" : "incoming";
+        const direction: "outgoing" | "incoming" = authorId === user?.userId ? "outgoing" : "incoming";
         return {
           ...message,
           direction,
           sender:
             direction === "outgoing"
-              ? { name: user?.name ?? "You", avatar: user?.pictureUrl }
+              ? { name: "You", avatar: undefined }
               : { name: config.botName ?? "Bot", avatar: config.botAvatar },
         };
       }),
-    [
-      config.botAvatar,
-      config.botName,
-      messages,
-      user?.userId,
-      user?.name,
-      user?.pictureUrl,
-    ]
+    [config.botAvatar, config.botName, messages, user?.userId]
   );
 
   const toggleWebchat = () => {
@@ -104,9 +97,7 @@ export default function Home() {
           composerPlaceholder="Type a message..."
         />
       </Container>
-      <Fab
-        onClick={() => toggleWebchat()}
-      />
+      <Fab onClick={() => toggleWebchat()} />
     </>
   );
 }
