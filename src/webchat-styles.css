@@ -1,0 +1,213 @@
+/* Custom Botpress Webchat Styles */
+
+/* Container */
+.bpContainer {
+  width: 50vw;
+  height: 85vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000;
+  background-color: #E8EBE6;
+}
+
+/* Fab (floating action button) */
+.bpFabContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  background-color: #E8EBE6;
+}
+
+/* Header */
+.bpHeaderContainer {
+  padding: 0;
+  background-color: #E8EBE6;
+  border-bottom: 1px solid #000;
+  backdrop-filter: none;
+}
+
+.bpHeaderContentContainer {
+  padding: 12px 16px;
+}
+
+.bpHeaderContentTitle,
+.bpHeaderContentDescription {
+  color: black;
+  font-size: x-large;
+  padding-top: 2;
+  padding-bottom: 2;
+}
+
+/* Header avatar - black circle with white text */
+.bpHeaderContentAvatarFallback {
+  background-color: #000;
+  color: white;
+}
+
+/* Header action buttons container */
+.bpHeaderContentActionsContainer {
+  display: flex;
+  gap: 0;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Restart button - green background */
+.bpHeaderContentActionsIcons.lucide-rotate-ccw {
+  background-color: #73BD6B;
+  color: black;
+  padding: 17px;
+  height: 100%;
+  width: 56px;
+  border-radius: 0;
+  border-left: 1px solid #000;
+}
+
+/* Close button - pink background */
+.bpHeaderContentActionsIcons.lucide-x {
+  background-color: #DE90E2;
+  color: black;
+  padding: 17px;
+  height: 100%;
+  width: 56px;
+  border-radius: 0;
+  border-left: 1px solid #000;
+}
+
+/* Message List Container */
+.bpMessageListContainer {
+  background-color: #E8EBE6;
+}
+
+/* Message bubbles */
+.bpMessageBlocksBubble {
+  background-color: white;
+  box-shadow: none;
+  border-radius: 18px;
+}
+
+.bpMessageContainer[data-direction="incoming"] .bpMessageBlocksBubble {
+  background-color: #DBDED8;
+}
+
+.bpMessageContainer[data-direction="outgoing"] .bpMessageBlocksBubble {
+  background-color: #000;
+  color: white;
+}
+
+/* Marquee (welcome message) */
+.bpMessageListMarqueeContainer {
+  background-color: transparent;
+}
+
+.bpMessageListMarqueeTitle {
+  color: black;
+}
+
+.bpMessageListMarqueeDescription {
+  color: #666;
+}
+
+.bpMessageListMarqueeAvatarFallback {
+  background-color: #000;
+  color: white;
+}
+
+/* Action buttons in messages (like "Tell me about AI agents") */
+.bpMessageBlocksButton {
+  background-color: #93C5FD;
+  color: black;
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+
+.bpMessageBlocksButton:hover {
+  background-color: #60A5FA;
+}
+
+/* Composer */
+.bpComposerContainer {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+}
+
+.bpComposerInput {
+  background-color: transparent;
+  color: black;
+}
+
+.bpComposerInput::placeholder {
+  color: #999;
+}
+
+.bpComposerSendButton {
+  background-color: #000;
+  color: white;
+}
+
+.bpComposerUploadButton {
+  color: #666;
+}
+
+/* Composer footer */
+.bpComposerFooter {
+  display: none;
+}
+
+/* Modal */
+.bpModalContainer {
+  background-color: #E8EBE6;
+}
+
+.bpModalButtonConfirm {
+  background-color: #000;
+  color: white;
+}
+
+.bpModalButtonConfirm:hover {
+  background-color: #333;
+}
+
+.bpModalButtonCancel {
+  background-color: #DBDED8;
+  color: black;
+}
+
+.bpModalButtonCancel:hover {
+  background-color: #ccd0c8;
+}
+
+.bpDropzoneOverlay {
+  background-color: #E8EBE6;
+  color: black;
+}
+
+.bpComposerFooter {
+  background-color: #E8EBE6;
+}
+
+/* Calendly button - styled to stand out from regular messages */
+.calendlyButton {
+  background-color: #DBDED8;
+  color: black;
+  border-radius: 24px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid #ccc;
+}
+
+.calendlyButton:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0 2px 8px gray;
+  transform: translateY(-1px);
+}
