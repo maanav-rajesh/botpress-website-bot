@@ -11,7 +11,7 @@ import {
 } from "@botpress/webchat";
 import { useState, useMemo } from "react";
 import "./webchat-styles.css";
-
+//dummy
 const headerConfig = {
   botName: "Botpress",
   botAvatar:
