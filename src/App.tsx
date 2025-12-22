@@ -46,7 +46,8 @@ export default function Home() {
     () =>
       messages.map((message) => {
         const { authorId } = message;
-        const direction: "outgoing" | "incoming" = authorId === user?.userId ? "outgoing" : "incoming";
+        const direction: "outgoing" | "incoming" =
+          authorId === user?.userId ? "outgoing" : "incoming";
         return {
           ...message,
           direction,
@@ -79,9 +80,9 @@ export default function Home() {
           configuration={headerConfig}
         />
         <MessageList
-          // botAvatar={config.botAvatar}
           botName={config.botName}
           botDescription={config.botDescription}
+          botAvatar={config.botAvatar}
           isTyping={isTyping}
           showMarquee={true}
           messages={enrichedMessages}
