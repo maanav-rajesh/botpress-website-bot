@@ -2,212 +2,221 @@
 
 /* Container */
 .bpContainer {
-  width: 50vw;
-  height: 85vh;
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  width: 50vw !important;
+  height: 85vh !important;
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
   transform: translate(-50%, -50%);
-  border: 1px solid #000;
-  background-color: #E8EBE6;
+  border: 1px solid #000 !important;
+  background-color: #e8ebe6 !important;
 }
 
 /* Fab (floating action button) */
 .bpFabContainer {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 64px;
-  height: 64px;
-  background-color: #E8EBE6;
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  width: 64px !important;
+  height: 64px !important;
+  background-color: #e8ebe6 !important;
 }
 
 /* Header */
 .bpHeaderContainer {
-  padding: 0;
-  background-color: #E8EBE6;
-  border-bottom: 1px solid #000;
-  backdrop-filter: none;
+  padding: 0 !important;
+  background-color: #e8ebe6 !important;
+  border-bottom: 1px solid #000 !important;
+  backdrop-filter: none !important;
 }
 
 .bpHeaderContentContainer {
-  padding: 12px 16px;
+  padding: 12px 16px !important;
 }
 
 .bpHeaderContentTitle,
 .bpHeaderContentDescription {
-  color: black;
-  font-size: x-large;
-  padding-top: 2;
-  padding-bottom: 2;
+  color: black !important;
+  font-size: x-large !important;
+  padding-top: 2 !important;
+  padding-bottom: 2 !important;
 }
 
 /* Header avatar - black circle with white text */
 .bpHeaderContentAvatarFallback {
-  background-color: #000;
-  color: white;
+  background-color: #000 !important;
+  color: white !important;
 }
 
 /* Header action buttons container */
 .bpHeaderContentActionsContainer {
-  display: flex;
-  gap: 0;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
+  display: flex !important;
+  gap: 0 !important;
+  height: 100% !important;
+  position: absolute !important;
+  right: 0 !important;
+  top: 0 !important;
 }
 
 /* Restart button - green background */
 .bpHeaderContentActionsIcons.lucide-rotate-ccw {
-  background-color: #73BD6B;
-  color: black;
-  padding: 17px;
-  height: 100%;
-  width: 56px;
-  border-radius: 0;
-  border-left: 1px solid #000;
+  background-color: #73bd6b !important;
+  color: black !important;
+  padding: 17px !important;
+  height: 100% !important;
+  width: 56px !important;
+  border-radius: 0 !important;
+  border-left: 1px solid #000 !important;
 }
 
 /* Close button - pink background */
 .bpHeaderContentActionsIcons.lucide-x {
-  background-color: #DE90E2;
-  color: black;
-  padding: 17px;
-  height: 100%;
-  width: 56px;
-  border-radius: 0;
-  border-left: 1px solid #000;
+  background-color: #de90e2 !important;
+  color: black !important;
+  padding: 17px !important;
+  height: 100% !important;
+  width: 56px !important;
+  border-radius: 0 !important;
+  border-left: 1px solid #000 !important;
 }
 
 /* Message List Container */
 .bpMessageListContainer {
-  background-color: #E8EBE6;
+  background-color: #e8ebe6 !important;
 }
 
 /* Message bubbles */
 .bpMessageBlocksBubble {
-  background-color: white;
-  box-shadow: none;
-  border-radius: 18px;
+  background-color: white !important;
+  box-shadow: none !important;
+  border-radius: 18px !important;
 }
 
 .bpMessageContainer[data-direction="incoming"] .bpMessageBlocksBubble {
-  background-color: #DBDED8;
+  background-color: #dbded8 !important;
 }
 
 .bpMessageContainer[data-direction="outgoing"] .bpMessageBlocksBubble {
-  background-color: #000;
-  color: white;
+  background-color: #000 !important;
+  color: white !important;
 }
 
 /* Marquee (welcome message) */
 .bpMessageListMarqueeContainer {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .bpMessageListMarqueeTitle {
-  color: black;
+  color: black !important;
 }
 
 .bpMessageListMarqueeDescription {
-  color: #666;
+  color: #666 !important;
 }
 
 .bpMessageListMarqueeAvatarFallback {
-  background-color: #000;
-  color: white;
+  background-color: #000 !important;
+  color: white !important;
 }
 
 /* Action buttons in messages (like "Tell me about AI agents") */
 .bpMessageBlocksButton {
-  background-color: #93C5FD;
-  color: black;
-  border: 1px solid #000;
-  border-radius: 20px;
-  padding: 8px 16px;
+  background-color: #93c5fd !important;
+  color: black !important;
+  border: 1px solid #000 !important;
+  border-radius: 20px !important;
+  padding: 8px 16px !important;
 }
 
 .bpMessageBlocksButton:hover {
-  background-color: #60A5FA;
+  background-color: #60a5fa !important;
 }
 
 /* Composer */
 .bpComposerContainer {
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 24px;
+  background-color: white !important;
+  border: 1px solid #ccc !important;
+  border-radius: 24px !important;
 }
 
 .bpComposerInput {
-  background-color: transparent;
-  color: black;
+  background-color: transparent !important;
+  color: black !important;
 }
 
 .bpComposerInput::placeholder {
-  color: #999;
+  color: #999 !important;
 }
 
 .bpComposerSendButton {
-  background-color: #000;
-  color: white;
+  background-color: #000 !important;
+  color: white !important;
 }
 
 .bpComposerUploadButton {
-  color: #666;
+  color: #666 !important;
 }
 
 /* Composer footer */
 .bpComposerFooter {
-  display: none;
+  display: none !important;
 }
 
 /* Modal */
 .bpModalContainer {
-  background-color: #E8EBE6;
+  background-color: #e8ebe6 !important;
 }
 
 .bpModalButtonConfirm {
-  background-color: #000;
-  color: white;
+  background-color: #000 !important;
+  color: white !important;
 }
 
 .bpModalButtonConfirm:hover {
-  background-color: #333;
+  background-color: #333 !important;
 }
 
 .bpModalButtonCancel {
-  background-color: #DBDED8;
-  color: black;
+  background-color: #dbded8 !important;
+  color: black !important;
 }
 
 .bpModalButtonCancel:hover {
-  background-color: #ccd0c8;
+  background-color: #ccd0c8 !important;
 }
 
 .bpDropzoneOverlay {
-  background-color: #E8EBE6;
-  color: black;
+  background-color: #e8ebe6 !important;
+  color: black !important;
 }
 
 .bpComposerFooter {
-  background-color: #E8EBE6;
+  background-color: #e8ebe6 !important;
 }
 
 /* Calendly button - styled to stand out from regular messages */
 .calendlyButton {
-  background-color: #DBDED8;
-  color: black;
-  border-radius: 24px;
-  font-size: 15px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  border: 1px solid #ccc;
+  background-color: #93c5fd !important;
+  color: black !important;
+  border-radius: 24px !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  border: 2px solid #000 !important;
+  padding: 12px 20px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) !important;
+  display: inline-block !important;
 }
 
 .calendlyButton:hover {
-  background-color: black;
-  color: white;
-  box-shadow: 0 2px 8px gray;
-  transform: translateY(-1px);
+  background-color: #60a5fa !important;
+  color: black !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+  transform: translateY(-2px) !important;
+}
+
+.calendlyButton:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15) !important;
 }
